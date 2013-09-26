@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="top">
+          <div id="logo" class="seven columns">
+            <img src="/img/logo.jpg">
+          </div>
+          <nav>
+            <ul class="navbar" class="nine columns">
+              <li><a href="/index.html">Home</a></li>
+              <li class="active"><a href="/work.html">Work</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+          </nav>
+        </div>
+      </header>
+
+      <div id="main" class="masonry">
+        <div class="proj four columns">
+          <a href="/work/givt.html">
+          <img src="/img/old/givtlogo.jpg">
+          <span class="popup">this is a test<br>and so is this<br>and this as well</span>
+        </div>
+        <div class="proj eight columns">
+          <a href="/work/jstor.html">
+          <img src="/img/old/jstor_logo_large.gif">
+          <span class="popup">this is a test</span>
+          </a>
+        </div>
+        <div class="proj four columns">
+          <a href="/work/slam.html">
+          <img src="/img/old/slamthumb.jpg">
+          <span class="popup">this is a test</span>
+        </div>
+        <div class="proj four columns">
+          <a href="/work/pinterest.html">
+          <img src="/img/old/pinlogo.jpg">
+          <span class="popup">this is a test</span>
+          </a>
+        </div>
+        <div class="proj four columns">
+          <img src="/img/old/slamthumb.jpg">
+          <span class="popup">this is a test</span>
+        </div>
+        <div class="proj four columns">
+          <img src="/img/old/givtlogo.jpg">
+          <span class="popup">this is a test</span>
+        </div>
+        <div class="proj four columns">
+          <img src="/img/old/givtlogo.jpg">
+          <span class="popup">this is a test</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="clear-footer"></div>
+    <footer>Built by Ray Alexander using <a href="http://www.getskeleton.com">Skeleton</a> and <a href="http://masonry.desandro.com/">Masonry</a></footer>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Masonry JS -->
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+$(function(){
+ 
+    var $container = $('#main');
+   
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.proj'
+      });
+    });
+   
+  });
+</script>
+
+
+  </body>
+</html>
